@@ -1,15 +1,13 @@
 module TestMain where
-
+import Control.Monad (unless)
 import UnicodeToIPANumber
 
 main :: IO ()
 main =
-  if unicodeToNumber 'b' /= 102
-  then error "b should be 102"
-  else return ()
+  unless (unicodeToNumber 'b' == 102)
+  (error "b should be 102")
   >>
-  if unicodeToNumber 'p' /= 101
-  then error "p should be 101"
-  else return ()  
+  unless (unicodeToNumber 'p' == 101)
+  (error "p should be 101")
   >>
   putStrLn "All Tests passed successfully, but we need more tests"
