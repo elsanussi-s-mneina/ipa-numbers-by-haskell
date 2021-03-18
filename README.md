@@ -32,3 +32,5 @@ If it does not work, run clean.sh first.
 Then you have to provide input, something like "123" without the quotes.
 Then enter a new line, and then hold the ctrl key and press the D key.
 
+### How to run unit tests
+`test.sh`
