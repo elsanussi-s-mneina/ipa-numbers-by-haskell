@@ -1,1 +1,1 @@
-runghc TestMain.hs
+runghc -Wno-tabs TestMain.hs

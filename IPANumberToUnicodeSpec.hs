@@ -7,8 +7,7 @@ import IPANumberToUnicode (numberToUnicode)
 runNumberToUnicodeTests :: IO ()
 runNumberToUnicodeTests =
 	putStrLn "IPA Numbers to Convert Unicode code points"
-  	>>
-  	unless (numberToUnicode 101 == 'p') (error "IPA Number 101 to latin small letter p")
+ 	>> unless (numberToUnicode 101 == 'p') (error "IPA Number 101 to latin small letter p")
 	>> unless (numberToUnicode 101 == '\x0070') (error "IPA Number 101 to latin small letter p code point")
 	>> unless (numberToUnicode 102 == 'b') (error "IPA Number 102 to latin small letter b")
 	>> unless (numberToUnicode 102 == '\x0062')
@@ -17,7 +16,7 @@ runNumberToUnicodeTests =
 				(error "IPA Number 103 to latin small letter t")
 	>> unless (numberToUnicode 103 == '\x0074')
 				(error "IPA Number 103 to latin small letter t code point")
-	>> unless (numberToUnicode 104  == 'd')
+	>> unless (numberToUnicode 104 == 'd')
 				(error "IPA Number 104 to latin small letter d")
 	>> unless (numberToUnicode 104 == '\x0064')
 				(error "IPA Number 104 to latin small letter d code point")
