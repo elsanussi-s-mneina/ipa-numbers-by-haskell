@@ -1,0 +1,7 @@
+
+# These files are produced in the compilation process:
+*.hi
+*.o
+
+# Main executable
+Main
