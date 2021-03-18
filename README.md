@@ -32,7 +32,7 @@ https://www.internationalphoneticassociation.org/sites/default/files/IPA_Number_
 ### How to compile
 Either run the file titled `compile.sh` or run the commands within it.
 
-`./compile.sh'
+`./compile.sh`
 
 If it does not work, run clean.sh first.
 
