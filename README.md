@@ -9,7 +9,8 @@ It was originally part of the https://github.com/elsanussi-s-mneina/phonetics-mo
 
 # Project status
 - This part is incomplete, come back in a week it will probably be complete by then.
-- currently conversion is only one way.
+- currently conversion is both ways, which direction can be specified using command line flags.
+- unit tests still need to be implemented (again, because we are not using libraries this time)
 
 ## Developer software requirements
 - Glasgow Haskell Compiler
