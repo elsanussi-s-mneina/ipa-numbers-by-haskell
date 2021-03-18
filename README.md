@@ -6,11 +6,20 @@ This is a compiled, command line program.
 
 It was originally part of the https://github.com/elsanussi-s-mneina/phonetics-modeling project.
 
+## Important References:
+These are the data that this program is trying to implement:
+
+The IPA Number chart:
+https://www.internationalphoneticassociation.org/sites/default/files/IPA_Number_chart_(C)2005.pdf
 
 # Project status
 - This part is incomplete, come back in a week it will probably be complete by then.
 - currently conversion is both ways, which direction can be specified using command line flags.
-- unit tests still need to be implemented (again, because we are not using libraries this time)
+- unit tests have been migrated over from the parent project.
+
+## Tasks left to do:
+- go over unit tests and ensure all cases are covered.
+
 
 ## Developer software requirements
 - Glasgow Haskell Compiler
