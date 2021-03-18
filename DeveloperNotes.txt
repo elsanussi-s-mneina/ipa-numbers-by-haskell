@@ -1,0 +1,6 @@
+# Replacement Regular expression for migrating away from HSpec
+Find:
+it (".*?").*?\((.*?)`shouldBe`(.*?)\);
+
+Replace with:
+unless ($2 == $3) (error $1);
