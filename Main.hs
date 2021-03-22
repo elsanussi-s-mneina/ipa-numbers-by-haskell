@@ -5,8 +5,14 @@ import System.Environment (getArgs)
 import IPANumberToUnicode 
 import UnicodeToIPANumber
 
+versionNumber :: String
+versionNumber = "0.3.0"
+
+programName :: String
+programName = "IPA Number and Character Converter"
+
 helpMessage :: String
-helpMessage = "To convert a character to a number use the --cn flag. To convert a number to a character use the --nc flag."
+helpMessage = "Usage: \n --cn \t To convert a character to a number use the flag.\n --nc \t To convert a number to a character use the flag. \n --version \t To see the version number of this executable."
 
 ipaCharacterToNumberWrapper :: String -> String
 ipaCharacterToNumberWrapper = show . unicodeToNumber . head
@@ -16,6 +22,10 @@ numberToUnicodeWrapper = return . numberToUnicode . read
 
 showHelp :: IO ()
 showHelp = putStrLn helpMessage
+
+-- | Display the program name and version number.
+showProgramVersion :: IO ()
+showProgramVersion = putStrLn (unwords [programName, versionNumber])
 
 -- | Converts a function that applies to a single token in a string,
 --  and makes a similar function that does the same but with
@@ -33,6 +43,7 @@ handleArguments args =
   case args of 
     ["--cn"] -> interact (perWord ipaCharacterToNumberWrapper)
     ["--nc"] -> interact  (perWord numberToUnicodeWrapper)
+    ["--version"]  -> showProgramVersion
     _ -> showHelp
 
 
