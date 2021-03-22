@@ -1,1 +1,1 @@
-./Main
+./Main --nc

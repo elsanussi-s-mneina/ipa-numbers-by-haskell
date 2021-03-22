@@ -32,15 +32,26 @@ https://www.internationalphoneticassociation.org/sites/default/files/IPA_Number_
 ### How to compile
 Either run the file titled `compile.sh` or run the commands within it.
 
-`./compile.sh`
+`./compile.sh'
 
 If it does not work, run clean.sh first.
 
 ### How to run
-`./run.sh`
+`/.run.sh`
 
 Then you have to provide input, something like "123" without the quotes.
 Then enter a new line, and then hold the ctrl key and press the D key.
 
 ### How to run unit tests
-`./test.sh`
+`test.sh`
+
+### How to run the executable
+The following is an example of how to run the executable (called Main),
+converting numbers to characters (i.e. --nc), and taking input
+from a file called gold_input.txt in the current directory.
+
+`./Main --nc < gold_input.txt 
+
+The expected output on the command line is:
+`p b t d ʈ ɖ c ɟ k g q ɢ ʔ`
+
