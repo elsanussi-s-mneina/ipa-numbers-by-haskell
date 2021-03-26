@@ -50,7 +50,10 @@ The following is an example of how to run the executable (called Main),
 converting numbers to characters (i.e. --nc), and taking input
 from a file called gold_input.txt in the current directory.
 
-`./Main --nc < gold_input.txt 
+`./Main --nc < gold_input.txt `
+
+(or without an executable: `runghc Main.hs --nc < gold_input.txt`)
+
 
 The expected output on the command line is:
 `p b t d ʈ ɖ c ɟ k g q ɢ ʔ`

@@ -1,6 +1,10 @@
 # Change Log
 Date format: year-month-day (YYYY-MM-DD)
 
+## vesion 0.3.1, 2012-03-25
+- More readable console output: (add new line at end)
+- Add new command line option to convert numbers to characters while preserving spaces.
+
 ## version 0.3.0, 2021-03-22 : March 22, 2021
 - Handle multiple numbers in one run of the program. (tokenize strings first).
 - Add version number
