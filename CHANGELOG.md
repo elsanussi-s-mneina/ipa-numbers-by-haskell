@@ -4,7 +4,7 @@ Date format: year-month-day (YYYY-MM-DD)
 ## Latest, 2021-04-03
 - change run.sh (the run shell script) to work even if no executable is present.
   - improve usability of run.sh by giving user directions first.
-
+- Refactor: changed source code to use if expression instead of case expression.
 
 ## vesion 0.3.1, 2021-03-25
 - More readable console output: (add new line at end)
