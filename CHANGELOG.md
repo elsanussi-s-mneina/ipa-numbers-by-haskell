@@ -1,7 +1,8 @@
 # Change Log
 Date format: year-month-day (YYYY-MM-DD)
 
-## vesion 0.3.1, 2012-03-25
+
+## vesion 0.3.1, 2021-03-25
 - More readable console output: (add new line at end)
 - Add new command line option to convert numbers to characters while preserving spaces.
 
